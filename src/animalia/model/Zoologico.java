@@ -8,7 +8,6 @@ public class Zoologico {
 	private List<Sessao> sessoes;
 	private Ingresso ingresso;
 	
-	
 	public String getNome() {
 		return nome;
 	}
@@ -21,7 +20,14 @@ public class Zoologico {
 	public void setSessoes(List<Sessao> sessoes) {
 		this.sessoes = sessoes;
 	}
+	public Ingresso getIngresso() {
+		return ingresso;
+	}
+	public void setIngresso(Ingresso ingresso) {
+		this.ingresso = ingresso;
+	}
 
 
+	
 	
 }

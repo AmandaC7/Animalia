@@ -1,23 +1,30 @@
 package animalia.model;
 
+import animalia.interfaces.IngressoInterface;
 import animalia.service.enums.TipoIngresso;
 
-public class Ingresso {
+public class Ingresso implements IngressoInterface{
 
 	private double valor;
 	private TipoIngresso tipo;
 	private int quantidade;
 	
-	public void valorIngresso(TipoIngresso tipo) {
-		if(tipo == TipoIngresso.NORMAL) {
-			setValor(valor);
-		}else if(tipo == TipoIngresso.ESTUDANTE) {
-			setValor(valor - 0.50);
-		}else if (tipo == TipoIngresso.CRIANCA) {
-			setValor(0);
-		}else if (tipo == TipoIngresso.IDOSO) {
-			setValor(valor - 0.25);
-		}
+//	public void valorIngresso(TipoIngresso tipo) {
+//		if(tipo == TipoIngresso.NORMAL) {
+//			setValor(valor);
+//		}else if(tipo == TipoIngresso.ESTUDANTE) {
+//			setValor(valor - 0.50);
+//		}else if (tipo == TipoIngresso.CRIANCA) {
+//			setValor(0);
+//		}else if (tipo == TipoIngresso.IDOSO) {
+//			setValor(valor - 0.25);
+//		}
+//	}
+//	
+	@Override
+	public double valorIngresso(double valor) {
+		getTipo();
+		return valor;
 	}
 	
 	public double getValor() {
@@ -40,6 +47,8 @@ public class Ingresso {
 	public void setQuantidade(int quantidade) {
 		this.quantidade = quantidade;
 	}
+
+	
 	
 	
 	
