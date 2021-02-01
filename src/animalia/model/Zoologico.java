@@ -6,8 +6,7 @@ public class Zoologico {
 
 	private String nome;
 	private List<Sessao> sessoes;
-	private double ingresso;
-	private int quantidadeIngresso;
+	private Ingresso ingresso;
 	
 	
 	public String getNome() {
@@ -22,20 +21,7 @@ public class Zoologico {
 	public void setSessoes(List<Sessao> sessoes) {
 		this.sessoes = sessoes;
 	}
-	public double getIngresso() {
-		return ingresso;
-	}
-	public void setIngresso(double ingresso) {
-		this.ingresso = ingresso;
-	}
-	public int getQuantidadeIngresso() {
-		return quantidadeIngresso;
-	}
-	public void setQuantidadeIngresso(int quantidadeIngresso) {
-		this.quantidadeIngresso = quantidadeIngresso;
-	}
-	
-	
-	
+
+
 	
 }
