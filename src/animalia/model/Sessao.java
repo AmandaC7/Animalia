@@ -10,10 +10,10 @@ public class Sessao<T> {
 	private TipoSessao sessao;
 	private List<T> animais;
 
-	public List<T> getAnimais(){
+	public List<T> getAnimais() {
 		return animais;
 	}
-	
+
 	public void addAnimal(T t) {
 		animais.add(t);
 	}
@@ -33,7 +33,5 @@ public class Sessao<T> {
 	public void setSessao(TipoSessao sessao) {
 		this.sessao = sessao;
 	}
-	
-	
-	
+
 }

@@ -12,17 +12,17 @@ public class Papagaio extends Ave implements Voar{
 
 	@Override
 	public void emitirSom() {
-		System.out.println("Cadê o " + getNome());
+		System.out.println(getNome() + ": Cadê o " + getNome() + "?");
 	}
 
 	@Override
 	public void voar() {
-		System.out.println("Eu vôo!");
+		System.out.println(getNome() + ": Eu vôo!");
 	}
 
 	@Override
 	public void tetrapoda() {
-		System.out.println("Eu sou um tetrapoda!");
+		System.out.println(getNome() + ": Eu sou um tetrapoda!");
 		
 	}
 
