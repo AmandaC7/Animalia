@@ -7,8 +7,15 @@ import animalia.service.enums.TipoSessao;
 public class Sessao<T> {
 
 	private String nome;
-	private TipoSessao sessao;
-	private List<T> animais;
+	private final TipoSessao sessao;
+	private final List<T> animais;
+
+	public Sessao(String nome, TipoSessao sessao, List<T> animais) {
+		super();
+		this.nome = nome;
+		this.sessao = sessao;
+		this.animais = animais;
+	}
 
 	public List<T> getAnimais() {
 		return animais;

@@ -60,14 +60,15 @@ public class Main {
 //		
 
 //		SESSOES
+		List<Animal> mamiferos = new ArrayList<Animal>();
+		mamiferos.add(jerry);
+//		List<Ave> aves = new ArrayList<Ave>();
 		
 		Sessao<Ave> aves = new Sessao<Ave>();
-//		aves.setSessao(TipoSessao.AVE);
+		aves.setSessao(TipoSessao.AVE);
 		aves.addAnimal(papagaio);
 		aves.addAnimal(pinguin);
 		
-		List<Animal> mamiferos = new ArrayList<Animal>();
-		mamiferos.add(jerry);
 			
 //		CLIENTES
 		
